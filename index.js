@@ -1710,17 +1710,17 @@ Fg.groupSettingChange(from, GroupSettingChange.messageSend, true)
    try {
 	      ppimg = await Fg.getProfilePicture(who);
 	    } catch {
-	      ppimg = 'https://i.ibb.co/PZNv21q/Profile-FG98.jpg';
+	      ppimg = 'https://ibb.co/ysLjvyK';
 	    }
 	 Prema = cekPremium(who) ? 'Si' : 'No'
    perfil = ` ┌───「 *${msg.pfile}* 」
-▢ *🔖 ${msg.nme}:* ${pushname}
-▢ *📇 Info:* ${about}
-▢ *🌎 ${msg.idiom}:* ${cekBahasa(who)}
+▢ *🌸 ${msg.nme}:* ${pushname}
+▢ *🌊 Info:* ${about}
+▢ *🍃 ${msg.idiom}:* ${cekBahasa(who)}
 ▢ *⚠️ ${msg.wrn}* : ${cekWarn(who)}/3
-▢ *⭐ Premium* : ${Prema}
-▢ *🆙 ${msg.lvl}* : ${cekLevel(who)}
-▢ *💰Coins* : ${cekPoin(who)} 
+▢ *🌴 Premium* : ${Prema}
+▢ *💢 ${msg.lvl}* : ${cekLevel(who)}
+▢ *💵Coins* : ${cekPoin(who)} 
 └──────────────`
 prof = await getBuffer(ppimg)
 Fg.sendMessage(from, prof, image, { thumbnail: fakethumb, quoted: mek, caption: perfil})
@@ -1732,7 +1732,7 @@ Fg.sendMessage(from, prof, image, { thumbnail: fakethumb, quoted: mek, caption: 
    try {
 	      ppimg = await Fg.getProfilePicture(from);
 	    } catch {
-	      ppimg = 'https://i.ibb.co/PZNv21q/Profile-FG98.jpg';
+	      ppimg = 'https://ibb.co/ysLjvyK';
 	    }
    isAntilink = isAntilink ? 'Si' : 'No' 
    isAntidelete = isAntidelete ? 'Si' : 'No' 
@@ -1860,12 +1860,15 @@ case 'reglasrol': m.reply(`╭══• ೋ•✧๑♡๑✧•ೋ •══╮
 
 ──────〘🏴〙────── 
 
-Comentarios de Admins: Isaac: ptamadre que guapo es Jonathan kya- 
+Comentarios de Admins: 
+
+Isaac: ptamadre que guapo es Jonathan kya- 
 
 
 
 
 ❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
+
 
 ╰══• ೋ•✧๑♡๑✧•ೋ •══╯`)
 		break
@@ -1903,6 +1906,8 @@ El usuario de esta postura da un salto y gira en aire mientras lo combina con un
 ──────〘🏴〙────── 
 
 ❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
+
+
 ╰══• ೋ•✧๑♡๑✧•ೋ •══╯
 `)
 break
@@ -1911,7 +1916,7 @@ case 'reglas1': m.reply(`
 ╭══• ೋ•✧๑♡๑✧•ೋ •══╮ 
 ┊┊┊┊⋆ ✧　 　 · 　 ✧　✵
 ┊┊┊☆ *　　 * ⋆
-┊┊★ *  💢 𝐑𝐄𝐆𝐋𝐀𝐒 💢 𝑹𝑬𝑮𝑳𝑨𝑺 𝑬𝑵 𝑩𝑨𝑻𝑨𝑳𝑳𝑨
+┊┊★ *  💢 𝐑𝐄𝐆𝐋𝐀𝐒
 ┊┊* . *　✦
 ┊☆ ° ✧　 　 ·
 ★*
@@ -1949,6 +1954,8 @@ Queremos que tu estancia sea divertida pero por seguridad de los demas, somos es
 
 
 ❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
+
+
 ╰══• ೋ•✧๑♡๑✧•ೋ •══╯`) 
 break
 
@@ -1958,7 +1965,7 @@ case 'reclutamiento': m.reply(`«───── « ⋅ʚ🌴ɞ⋅ » ───�
 
 [💢]» Queremos recalcar que este es un grupo que trata sobre y para rol, si eres un comediante, no gastes tu tiempo siendo un payaso y salte. 
 
-[💢]» Este grupo admite contenido +18, asi que si eres menor de 15, salte, a menos que tengas una certificacion donde tus padres admitan tu estadia en este grupo. 
+[💢]» Este grupo admite contenido +18, asi que si eres menor de 15, salte, a menos que tengas un certificado donde tus padres confirmen tu estadia en este grupo. 
 
 ──────〘🌙〙──────
 
