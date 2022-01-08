@@ -1811,8 +1811,7 @@ case 'listgroup':
 	
 	──────〘🌴〙──────
 	`)
-		
-break
+		break
 
 case 'reglasrol': m.reply(`╭══• ೋ•✧๑♡๑✧•ೋ •══╮ 
 ┊┊┊┊⋆ ✧　 　 · 　 ✧　✵
@@ -1868,7 +1867,8 @@ Comentarios de Admins: Isaac: ptamadre que guapo es Jonathan kya-
 
 ❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
 
-╰══• ೋ•✧๑♡๑✧•ೋ •══╯`) break
+╰══• ೋ•✧๑♡๑✧•ೋ •══╯`)
+		break
 
 case 'reglasbt': m.reply(`╭══• ೋ•✧๑♡๑✧•ೋ •══╮ 
 ┊┊┊┊⋆ ✧　 　 · 　 ✧　✵
@@ -1905,7 +1905,6 @@ El usuario de esta postura da un salto y gira en aire mientras lo combina con un
 ❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
 ╰══• ೋ•✧๑♡๑✧•ೋ •══╯
 `)
-
 break
 
 case 'reglas1': m.reply(`
@@ -1951,7 +1950,7 @@ Queremos que tu estancia sea divertida pero por seguridad de los demas, somos es
 
 ❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
 ╰══• ೋ•✧๑♡๑✧•ೋ •══╯`) 
-		break
+break
 
 case 'reclutamiento': m.reply(`«───── « ⋅ʚ🌴ɞ⋅ » ─────» 
 
@@ -1996,37 +1995,39 @@ Si te parece injusta alguna de estas reglas, comunicate con un administrador o m
 ❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
 
 
-«───── « ⋅ʚ🌴ɞ⋅ » ─────»`) break 
+«───── « ⋅ʚ🌴ɞ⋅ » ─────»`)
+break 
 		
 		//Con este case se envia la aplicacion Tutorial case 'tutorial': 
 	
-	case 'crear': m.reply(`
-	«───── « ⋅ʚ🌴ɞ⋅ » ─────» » Este BOT es hecho solo para atender a este grupo, aunque puedes usarlo si cumples algunos requisitos, de todas formas, tambien puedes crear tu propio bot para tu grupo de WhatsApp. 
+case 'crear': m.reply(`	«───── « ⋅ʚ🌴ɞ⋅ » ─────» 
+
+» Este BOT es hecho solo para atender a este grupo, aunque puedes usarlo si cumples algunos requisitos, de todas formas, tambien puedes crear tu propio bot para tu grupo de WhatsApp. 
 	
-	Para eso necesitas: 
+   Para eso necesitas: 
 	
-	✰+1GB de espacio libre. 
-	✰Una cuenta de GitHub. 
-	✰Termux. 
-	✰Dos numeros celulares: (Puedes usar tu propio numero si quieres pero no lo recomiendo). 
-	✰Programa para programacion: (Python; Visual Studio Code). 
-	✰Tener conocimiento en JS. 
-	✰Mucho tiempo libre. 
+  ✰+1GB de espacio libre. 
+  ✰Una cuenta de GitHub. 
+  ✰Termux. 
+  ✰Dos numeros celulares: (Puedes usar tu propio numero si quieres pero no lo recomiendo). 
+  ✰Programa para programacion: (Python; Visual Studio Code). 
+  ✰Tener conocimiento en JS. 
+  ✰Mucho tiempo libre.
 	
-	» Puedes contactarte con el creador de este bot para darte bases aunque tambien puedes buscar tutoriales en YT de como crear un BOT🌊. 
-	
-	
-	
-	〘🌙WP: wa.me/593987516808〙 
+» Puedes contactarte con el creador de este bot para darte bases aunque tambien puedes buscar tutoriales en YT de como crear un BOT🌊. 
 	
 	
 	
+〘🌙WP: wa.me/593987516808〙 
 	
 	
-	❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
 	
-	«───── « ⋅ʚ🌴ɞ⋅ » ─────»`)
-		break
+	
+	
+❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
+	
+«───── « ⋅ʚ🌴ɞ⋅ » ─────»`)
+break
   
 case 'voting':
 case 'votacion':
