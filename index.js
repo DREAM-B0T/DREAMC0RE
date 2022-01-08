@@ -1768,6 +1768,15 @@ case 'listgroup':
 ────────────`).join`\n\n`
   m.reply(`≡ *${msg.listgp}*\n\n${capt}`)
   break  
+		case 'actualizar':
+case 'update':
+if (!isOwner) return m.reply('tu quien eres para decirme que hacer!?🤔')
+m.reply('*ESPERE UN MOMENTO... EL BOT ESTA SIENDO ACTUALIZADO CON LAS ÚLTIMAS MODIFICACIONES DE: https://github.com/Samu330/NyanBot*')
+exec(`bash update.sh`, (err, stdout) => {
+if (err) return m.reply(err)
+if (stdout) m.reply(`*El bot se ah actualizado de forma satisfactoria*\n Informe de la actualización:\n\n${stdout}\n\nLos cambios se mostraran despues de volver a iniciar el bot!.`)
+})
+break
   
 case 'voting':
 case 'votacion':
