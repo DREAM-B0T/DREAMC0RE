@@ -423,7 +423,7 @@ if (Amount <= isPoin) {
 
 	  // Funcion de TTT
 	  
-	  
+	 
 	  
 // comando especial cuando el estado fuera de línea  está activado en el grupo
 switch (command) {
