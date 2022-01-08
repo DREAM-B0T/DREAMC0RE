@@ -1768,15 +1768,263 @@ case 'listgroup':
 ────────────`).join`\n\n`
   m.reply(`≡ *${msg.listgp}*\n\n${capt}`)
   break  
-		case 'actualizar':
-case 'update':
-if (!isOwner) return m.reply('tu quien eres para decirme que hacer!?🤔')
-m.reply('*ESPERE UN MOMENTO... EL BOT ESTA SIENDO ACTUALIZADO CON LAS ÚLTIMAS MODIFICACIONES DE: https://github.com/Samu330/NyanBot*')
-exec(`bash update.sh`, (err, stdout) => {
-if (err) return m.reply(err)
-if (stdout) m.reply(`*El bot se ah actualizado de forma satisfactoria*\n Informe de la actualización:\n\n${stdout}\n\nLos cambios se mostraran despues de volver a iniciar el bot!.`)
-})
+
+
+	case 'animes': m.reply(`──────〘🌴〙────── 
+	
+	〘✅〙𝑃𝐸𝑅𝑀𝐼𝑇𝐼𝐷𝑂𝑆: 
+	
+	❱ Kimetsu No Yaiba. 
+	❱ Shingeki No Kyojin. 
+	❱ Boku No hero. 
+	❱ Hunter x Hunter. 
+	❱ Jujutsu Kaisen. 
+	❱ Owari No Seraph. 
+	❱ One Punch Man. 
+	❱ Jojo’s Bizarre A. 
+	❱ Bleach. 
+	❱ Date a Live. 
+	❱ Fire Force. 
+	❱ Highschool DxD.
+	❱ Tate no Yuusha. 
+	❱ Tokyo Revengers. 
+	
+	〘💢〙𝑁𝑂 𝑃𝐸𝑅𝑀𝐼𝑇𝐼𝐷𝑂𝑆: 
+	
+	❱ Dragon Ball. 
+	❱ Naruto. 
+	
+	〘🍁〙𝑂𝑇𝑅𝑂𝑆: 
+	
+	❱ DC. 
+	❱ MARVEL. 
+	❱ Manhwas. 
+	
+	──────〘🏴〙────── 
+	
+	Si tienes alguna sugerencia de agregar otro cualquier anime a los permitidos, contacta con un Admin. Si tienes un OC usa .oc, sigue las instrucciones de reclutamiento. 
+	
+	
+	❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
+	
+	──────〘🌴〙──────
+	`)
+		
 break
+
+case 'reglasrol': m.reply(`╭══• ೋ•✧๑♡๑✧•ೋ •══╮ 
+┊┊┊┊⋆ ✧　 　 · 　 ✧　✵
+┊┊┊☆ *　　 * ⋆
+┊┊★ *  💢 𝑹𝑬𝑮𝑳𝑨𝑺 𝑬𝑵 𝑹𝑶𝑳𝑳 
+┊┊* . *　✦
+┊☆ ° ✧　 　 ·
+★*
+
+〘🏴〙» Sigue atentamente estas reglas para no tener problemas con los Administradores o tu pareja. 
+
+──────〘🏴〙────── 
+
+〘⚠️〙𝗜𝗠𝗣𝗢𝗥𝗧𝗔𝗡𝗧𝗘: Sabemos que hay gente nueva, asi como expertos en el rol, asi que como Administradores, queremos que la interaccion sea entre todos por eso, este grupo es libre en algunos aspectos como en lineas de rol, obviamente si tu quieres hacer biblias eres libre de hacer eso. 
+
+⚠️› MINIMO: 8 LINEAS ENTRE DESCRIPCION Y DIALOGO 
+⚠️› MAXIMO: A TU GUSTO 
+
+〘⛔️〙 Tu rol no tiene que ser seco, no permitimos roles que sean tan basicos, queremos algo de interaccion. EJ: *Lo besa*; *Se baña*; *Come* 
+
+〘💢〙 Ten una buena ortografia y gramatica, no te pedimos que sea perfecta pero si entendible. 
+
+〘💢〙 Usa los signos de rol: 
+
+**〕 Accion con tu personaje sea con un objeto o una persona.
+
+~~〕 Pensamiento de tu personaje El texto deberia quedar asi: Q̵u̵e̵ ̵g̵u̵a̵p̵o̵ ̵e̵s̵ ̵J̵o̵n̵a̵t̵h̵a̵n̵
+
+//〕 Fuera de rol. EJ: Oye, ya comiste?//, Usalo cuando sea
+
+〘💢〙 Respeta a tu compañero de rol, sea On o Off Rol, cualquier falta de respeto sera castigada con BAN. 
+
+〘💢〙 Si quieres realizar un evento, como una boda, acude con los Admins para poder organizarte algo bonito.
+
+──────〘🏴〙────── 
+
+⸺ 𝐺𝐸𝑁𝐸𝑅𝑂𝑆: 
+
+🎲 Casual: ✅ 
+🎪 Eventos: ✅ 
+🍋 Lemon: ✅ 
+🥂 Fiestas: ✅ 
+⚔️ Battle: ✅ 
+🎀 Otro: ✅ 
+🎌Eventos de grupo: ✅ 
+
+──────〘🏴〙────── 
+
+Comentarios de Admins: Isaac: ptamadre que guapo es Jonathan kya- 
+
+
+
+
+❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
+
+╰══• ೋ•✧๑♡๑✧•ೋ •══╯`) break
+
+case 'reglasbt': m.reply(`╭══• ೋ•✧๑♡๑✧•ೋ •══╮ 
+┊┊┊┊⋆ ✧　 　 · 　 ✧　✵
+┊┊┊☆ *　　 * ⋆
+┊┊★ * 💢 𝑹𝑬𝑮𝑳𝑨𝑺 𝑬𝑵 𝑩𝑨𝑻𝑨𝑳𝑳𝑨
+┊┊* . *　✦
+┊☆ ° ✧　 　 ·
+★*
+
+〘🏴〙» Sigue atentamente estas reglas para no tener problemas con los Administradores y tu oponente. 
+
+──────〘🏴〙────── 
+
+〘💢〙 Los Administradores estaran monitoreando tu batalla. 
+
+〘💢〙 Cada que pongas un ataque, deberas de poner una descripcion de este. 
+
+EJ: Aliento de Agua: 
+« Rueda de Agua Segunda Postura »
+El usuario de esta postura da un salto y gira en aire mientras lo combina con un ataque fluido giratorio. 
+
+〘💢〙 Deberas ser claro en tus movimientos asi como describirlos bien y tener buena gramatica y ortografia. 
+
+〘💢〙 Si es un evento, tendran un contador que cuando se acabe y nadie de los oponentes haya perdido, entre los administradores se tomara un ganador, se lo elijira mediante a su desempeño en batalla. 
+
+〘💢〙 Si es un evento o pelea en equipos, se lo elijira aleatoriamente a menos que los Administradores den una excepcion. 
+
+〘💢〙 Los ataques mortales que des seran verificados por un administrador, si el golpe es valido, la batalla sera dada de alta y el ganador sera el que menos golpes sufrio o el que haya quedo en pie. 
+
+〘💢〙 Si pierdes, termina tu rol rindiendote o muriendo. 
+
+──────〘🏴〙────── 
+
+❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
+╰══• ೋ•✧๑♡๑✧•ೋ •══╯
+`)
+
+break
+
+case 'reglas1': m.reply(`
+╭══• ೋ•✧๑♡๑✧•ೋ •══╮ 
+┊┊┊┊⋆ ✧　 　 · 　 ✧　✵
+┊┊┊☆ *　　 * ⋆
+┊┊★ *  💢 𝐑𝐄𝐆𝐋𝐀𝐒 💢 𝑹𝑬𝑮𝑳𝑨𝑺 𝑬𝑵 𝑩𝑨𝑻𝑨𝑳𝑳𝑨
+┊┊* . *　✦
+┊☆ ° ✧　 　 ·
+★*
+
+
+〘🏴〙» Sigue atentamente estas reglas para no tener problemas con los Administradores.
+
+──────〘🏴〙────── 
+
+〘💢〙𝑅𝑒𝑠𝑝𝑒𝑡𝑜 
+No toleramos cualquier falta de respeto a Usuarios o Administradores, justificamos solo si hay confianza entre estos. 
+
+〘💢〙𝑃𝑟𝑖𝑣𝑎𝑐𝑖𝑑𝑎𝑑 
+Por seguridad, no queremos que los hombres molesten a las mujeres por interno o por medio del grupo, si conoces a alguien que te acosa o molesta, acude a un administrador. 
+
+〘💢〙𝐶𝑜𝑛𝑡𝑒𝑛𝑖𝑑𝑜 
++𝟷𝟾 Permitimos contenido +18, pero el Child Porn (CP) es inaceptable. Si envias cualquier tipo de este contenido, el BOT te denunciara y por asuntos legales, jamas tuvimos contacto contigo. 
+
+〘💢〙𝐵𝑂𝑇 
+No uses el BOT en tus grupos o por interno sin permiso del creador, este BOT esta diseñado solo para satisfacer las necesidades de Ussers y Admins solo en este grupo. 
+
+〘💢〙𝑆𝑃𝐴𝑀 
+No spamees links de grupos de WhatsApp, Fotos, Stickers ni links raros. 
+
+〘💢〙𝐴𝑐𝑡𝑖𝑣𝑖𝑑𝑎𝑑 
+Hacemos limpieza cuando se nos de la regalada gana, asi que mejor estate activo o espera a que te eliminemos. 
+
+〘⚠️〙 Ten cuidado con el antilegiones ya que cualquier contenido que parezca traba como audio/mensaje/foto te eliminara. 
+
+──────〘🏴〙────── 
+
+Queremos que tu estancia sea divertida pero por seguridad de los demas, somos estrictos ya que queremos que la estancia de todos sea sana. 
+
+
+
+
+❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
+╰══• ೋ•✧๑♡๑✧•ೋ •══╯`) 
+		break
+
+case 'reclutamiento': m.reply(`«───── « ⋅ʚ🌴ɞ⋅ » ─────» 
+
+🌴 𝔅𝔦𝔢𝔫𝔳𝔢𝔫𝔦𝔡𝔬 𝔞 ℜ𝔢𝔠𝔩𝔲𝔱𝔞𝔪𝔦𝔢𝔫𝔱𝔬 
+
+[💢]» Queremos recalcar que este es un grupo que trata sobre y para rol, si eres un comediante, no gastes tu tiempo siendo un payaso y salte. 
+
+[💢]» Este grupo admite contenido +18, asi que si eres menor de 15, salte, a menos que tengas una certificacion donde tus padres admitan tu estadia en este grupo. 
+
+──────〘🌙〙──────
+
+» Sigue estos pasos para que seas admitido en el grupo: 
+∘[🏴] Presentate con Nombre; edad y Pais. 
+
+∘[⚠️] La foto es opcional, respe- tamos tu derecho a la privacidad. 
+
+∘[🏴] Despues, escribe los perso- najes que quieras usar, puedes usar como maximo 3. 
+
+∘[⚠️] Si quieres saber que animes estan permitidos y cuales no, usa .animes, si usas OC's, escribe .oc para que sepas que tienes que hacer. 
+
+∘[🎈] Envia toda esta informacion y tagea a un Admin al final del mensaje. 
+
+Puedes usar esta base como ayuda: 
+
+დ🏴─────────────── 
+Nombre: 
+Edad: 
+Pais: 
+დ🌴─────────────── 
+Pesonajes:
+✰
+✰
+✰
+დ🌙─────────────── 
+
+
+Si te parece injusta alguna de estas reglas, comunicate con un administrador o mi creador. 
+
+
+
+
+❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
+
+
+«───── « ⋅ʚ🌴ɞ⋅ » ─────»`) break 
+		
+		//Con este case se envia la aplicacion Tutorial case 'tutorial': 
+	
+	case 'crear': m.reply(`
+	«───── « ⋅ʚ🌴ɞ⋅ » ─────» » Este BOT es hecho solo para atender a este grupo, aunque puedes usarlo si cumples algunos requisitos, de todas formas, tambien puedes crear tu propio bot para tu grupo de WhatsApp. 
+	
+	Para eso necesitas: 
+	
+	✰+1GB de espacio libre. 
+	✰Una cuenta de GitHub. 
+	✰Termux. 
+	✰Dos numeros celulares: (Puedes usar tu propio numero si quieres pero no lo recomiendo). 
+	✰Programa para programacion: (Python; Visual Studio Code). 
+	✰Tener conocimiento en JS. 
+	✰Mucho tiempo libre. 
+	
+	» Puedes contactarte con el creador de este bot para darte bases aunque tambien puedes buscar tutoriales en YT de como crear un BOT🌊. 
+	
+	
+	
+	〘🌙WP: wa.me/593987516808〙 
+	
+	
+	
+	
+	
+	❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
+	
+	«───── « ⋅ʚ🌴ɞ⋅ » ─────»`)
+		break
   
 case 'voting':
 case 'votacion':
