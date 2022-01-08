@@ -2076,7 +2076,7 @@ boardnow.O + "@s.whatsapp.net",
 });
 return;
 }
-if (argss.length === 1)
+if (args.length === 1)
 	
 return m.reply(
 `Etiqueta a quien quieras que sea ser tu oponente.\n\nEjemplo : *.ttt <@tag>*`
@@ -2085,7 +2085,7 @@ return m.reply(
 	console.log(`NUEVA SECCION DE TTT ${boardnow.session}`);
 	boardnow.status = false;
 	boardnow.X = sender.replace("@s.whatsapp.net", "");
-	boardnow.O = argss[1].replace("@", "");
+	boardnow.O = args[1].replace("@", "");
 	fs.writeFileSync(
 		 `./lib/tictactoe/db/${from}.json`,
 		 JSON.stringify(boardnow, null, 2)
@@ -2100,14 +2100,14 @@ const strChat = `‿︵‿︵ʚ˚̣̣̣͙ɞ・🎮・ ʚ˚̣̣̣͙ɞ‿︵‿︵
 	
 )} te ha desafiado a ser su oponente en TTT.
 
-_[ ${argss[1]} ] Escribe "S" o "N" para aceptar o rechazar el juego._ 
+_[ ${args[1]} ] Escribe "S" o "N" para aceptar o rechazar el juego._ 
 
 ‿︵‿︵ʚ˚̣̣̣͙ɞ・🎮・ ʚ˚̣̣̣͙ɞ‿︵‿︵
 `;
 samu330.sendMessage(from, strChat, MessageType.text, {
 quoted: ftoko,
 contextInfo: {
-mentionedJid: [sender, argss[1].replace("@", "") + "@s.whatsapp.net"],
+mentionedJid: [sender, args[1].replace("@", "") + "@s.whatsapp.net"],
 },
 });
 break
