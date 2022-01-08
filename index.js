@@ -1262,8 +1262,8 @@ break
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
     mention = groupMembers.map(u => u.jid) 
-    m.reply('⸻ 𝑀𝑒𝑛𝑐𝑖𝑜𝑛 𝐺𝑟𝑢𝑝𝑎𝑙\n╭🃏───┈┈┈───┈┈───┈\n➥ 👤\n' + mention.map((v, i) => i + 1 + '┃ @' + v.replace(/@.+/,'')).join`\n`, null, {
-    contextInfo: { mentionedJid: mention }'╰🌴\n───┈┈┈───┈┈┈───┈\n‿︵❝〔🌹 ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞︵‿\n───┈┈┈───┈┈┈───┈┈'
+    m.reply('⸻ 𝑀𝑒𝑛𝑐𝑖𝑜𝑛 𝐺𝑟𝑢𝑝𝑎𝑙\n╭🃏───┈┈┈───┈┈───┈\n➥ 👤\n' + mention.map((v, i) => i + 1 + '┃ @\n╰🌴\n───┈┈┈───┈┈┈───┈\n‿︵❝〔🌹 ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞︵‿\n───┈┈┈───┈┈┈───┈┈' + v.replace(/@.+/,'')).join`\n`, null, {
+    contextInfo: { mentionedJid: mention }
   })
   break
   
