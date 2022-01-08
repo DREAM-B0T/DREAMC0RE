@@ -1262,7 +1262,7 @@ break
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
     mention = groupMembers.map(u => u.jid) 
-    m.reply('⸻ 𝑀𝑒𝑛𝑐𝑖𝑜𝑛 𝐺𝑟𝑢𝑝𝑎𝑙\n╭🃏───┈┈┈───┈┈───┈\n➥ 👤\n' + mention.map((v, i) => i + 1 + '┃ @\n╰🌴\n───┈┈┈───┈┈┈───┈\n‿︵❝〔🌹 ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞︵‿\n───┈┈┈───┈┈┈───┈┈' + v.replace(/@.+/,'')).join`\n`, null, {
+    m.reply('⸻ 𝑀𝑒𝑛𝑐𝑖𝑜𝑛 𝐺𝑟𝑢𝑝𝑎𝑙\n╭🃏───┈┈┈───┈┈───┈\n➥ 👤\n' + mention.map((v, i) => i + 1 + '┃ @' + v.replace(/@.+/,'')).join`\n`,'\n╰🌴\n───┈┈┈───┈┈┈───┈\n‿︵❝〔🌹 ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞︵‿\n───┈┈┈───┈┈┈───┈┈', null, {
     contextInfo: { mentionedJid: mention }
   })
   break
@@ -1270,7 +1270,7 @@ break
   case 'join':
   case 'entrabot':
  //   if(!isOwner && !isBot) return
-   if(!isPremium && !isOwner && !isBot) return m.reply(msg.premium)
+   if(!isOwner && !isBot) return m.reply(msg.premium)
     if(!value) return m.reply(`✳️Ingrese el link de tu Grupo`) 
     join = value.split('https://chat.whatsapp.com/')[1]
     await Fg.acceptInvite(join).then((res) => {
