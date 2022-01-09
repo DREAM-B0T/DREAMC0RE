@@ -149,6 +149,17 @@ const {
   delCustomBye
 } = require('./functions/welcome');
 
+const {
+  Welr,
+  addCustomWelcomer,
+  getCustomWelcomer,
+  setCustomWelcomer,
+  delCustomWelcomer,
+  getCustomByer,
+  setCustomByer,
+  delCustomByer
+} = require('./functions/welcomer');
+
 const { msgFilter } = require('./functions/antispam')
 const { menu, menuVC } = require('./functions/menu'); 
 const { espa, ind, eng, port } = require('./language/index');
