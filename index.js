@@ -284,7 +284,7 @@ module.exports = Fg = async (Fg, mek) => {
      let isAfkReason = cekAfkReason(sender);
      let isOffline = cekOffline(from);
      let isWelcome = cekWelcome(from);
-     let isWelcomer = cekWelcome(from);
+     let isWelcomer = cekWelcomer(from);
      let isAntidelete = cekAntidelete(from);
      let isAntilink = cekAntilink(from);
      let isDetect = cekDetect(from);
