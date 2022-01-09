@@ -1,12 +1,12 @@
 const fs = require("fs");
-const Wel = JSON.parse(fs.readFileSync('./database/welcome.json'));
+const Welr = JSON.parse(fs.readFileSync('./database/welcome.json'));
 
-const welAwal = `Hola @user 
+const welrAwal = `Hola @user 
 Bienvenido(a)  al grupo *@group*
 
 ▢ No olvide leer las reglas del grupo :v`;
 
-const byeAwal = `Adiós *@user*`;
+const byerAwal = `Adiós *@user*`;
 /**
  * Add welcome text to db
  * @param {string} chatId
@@ -14,7 +14,7 @@ const byeAwal = `Adiós *@user*`;
  * @param {object} Wel
  * @returns {boolean}
  */
-const addCustomWelcome = (chatId) => {
+const addCustomWelcomer = (chatId) => {
   let position = false;
   Object.keys(Wel).forEach((i) => {
     if (Wel[i].from === chatId) {
@@ -39,7 +39,7 @@ const addCustomWelcome = (chatId) => {
  * @param {object} Wel
  * @returns {Number}
  */
-const getCustomWelcome = (chatId) => {
+const getCustomWelcomer = (chatId) => {
   let position = false;
   Object.keys(Wel).forEach((i) => {
     if (Wel[i].from === chatId) {
@@ -56,7 +56,7 @@ const getCustomWelcome = (chatId) => {
  * @param {object} Wel
  * @returns {Number}
  */
-const getCustomBye = (chatId) => {
+const getCustomByer = (chatId) => {
   let position = false;
   Object.keys(Wel).forEach((i) => {
     if (Wel[i].from === chatId) {
@@ -74,7 +74,7 @@ const getCustomBye = (chatId) => {
  * @param {string} text
  * @param {object} Wel
  */
-const setCustomWelcome = (chatId, value) => {
+const setCustomWelcomer = (chatId, value) => {
   let position = false;
   Object.keys(Wel).forEach((i) => {
     if (Wel[i].from === chatId) {
@@ -92,7 +92,7 @@ const setCustomWelcome = (chatId, value) => {
  * @param {string} text
  * @param {object} Wel
  */
-const setCustomBye = (chatId, value) => {
+const setCustomByer = (chatId, value) => {
   let position = false;
   Object.keys(Wel).forEach((i) => {
     if (Wel[i].from === chatId) {
@@ -109,7 +109,7 @@ const setCustomBye = (chatId, value) => {
  * @param {string} chatId
  * @param {object} Wel
  */
-const delCustomWelcome = (chatId) => {
+const delCustomWelcomer = (chatId) => {
   let position = false;
   Object.keys(Wel).forEach((i) => {
     if (Wel[i].from === chatId) {
@@ -126,7 +126,7 @@ const delCustomWelcome = (chatId) => {
  * @param {string} chatId
  * @param {object} Wel
  */
-const delCustomBye = (chatId) => {
+const delCustomByer = (chatId) => {
   let position = false;
   Object.keys(Wel).forEach((i) => {
     if (Wel[i].from === chatId) {
