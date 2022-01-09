@@ -1,12 +1,31 @@
 const fs = require("fs");
 const Wel = JSON.parse(fs.readFileSync('./database/welcome.json'));
 
-const welAwal = `Hola @user 
-Bienvenido(a)  al grupo *@group*
+const welAwal = `‿︵‿︵ʚ˚̣̣̣͙ɞ・💢・ ʚ˚̣̣̣͙ɞ‿︵‿︵ 
 
-▢ No olvide leer las reglas del grupo :v`;
+        @group
 
-const byeAwal = `Adiós *@user*`;
+Bienvenido @user . . .
+
+No olvides leer las reglas para no tener problemas.
+
+.reglas
+.reglasbt
+.reglasrol
+
+Esperamos que tu estancia en este grupo sea sana y divertida.
+
+ATT: 𝐿𝑎 𝐴𝑑𝑚𝑖𝑛𝑖𝑠𝑡𝑟𝑎𝑐𝑖𝑜𝑛.
+
+‿︵‿︵ʚ˚̣̣̣͙ɞ・🌴・ ʚ˚̣̣̣͙ɞ‿︵‿︵`;
+
+const byeAwal = `‿︵‿︵ʚ˚̣̣̣͙ɞ・💢・ ʚ˚̣̣̣͙ɞ‿︵‿︵
+
+*@user* ha salido de @group, esperemos le vaya bien, de todas formas nos olvidaremos de que existe en 3 horas o 1 dia.
+
+Como sea, en que andabamos?.
+
+‿︵‿︵ʚ˚̣̣̣͙ɞ・🌴・ ʚ˚̣̣̣͙ɞ‿︵‿︵`;
 /**
  * Add welcome text to db
  * @param {string} chatId
