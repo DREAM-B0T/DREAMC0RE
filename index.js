@@ -1720,14 +1720,19 @@ Fg.groupSettingChange(from, GroupSettingChange.messageSend, true)
 	    }
 	 Prema = cekPremium(who) ? 'Si' : 'No'
    perfil = ` ┌───「 *${msg.pfile}* 」
-▢ *🌸 ${msg.nme}:* ${pushname}
-▢ *🌊 Info:* ${about}
-▢ *🍃 ${msg.idiom}:* ${cekBahasa(who)}
-▢ *⚠️ ${msg.wrn}* : ${cekWarn(who)}/3
-▢ *🌴 Premium* : ${Prema}
-▢ *💢 ${msg.lvl}* : ${cekLevel(who)}
-▢ *💵Coins* : ${cekPoin(who)} 
-└──────────────`
+𑁋 *🏷️ ${msg.nme} :* 
+   ${pushname}
+𑁋 *🌹 Info :*
+   ${about}
+𑁋 *⚠️ ${msg.wrn}* : 
+   ${cekWarn(who)}/3
+𑁋 *🌴 Premium* : 
+   ${Prema}
+𑁋 *🌊 ${msg.lvl}* : 
+   ${cekLevel(who)}
+𑁋 *💵Coins* : 
+   ${cekPoin(who)} 
+└─────────────`
 prof = await getBuffer(ppimg)
 Fg.sendMessage(from, prof, image, { thumbnail: fakethumb, quoted: mek, caption: perfil})
    break
