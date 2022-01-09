@@ -1596,6 +1596,25 @@ Fg.groupSettingChange(from, GroupSettingChange.messageSend, true)
       m.reply(msg.OnorOff)
     }
     break
+		
+   case 'welcomer':
+  case 'bienvenidar':
+    if(!isGroup) return m.reply(msg.group)
+    if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
+    //if(!isBotAdmins) return m.reply(msg.botadmin)
+    if(!value) return m.reply(msg.OnorOff)
+    if (value.toLowerCase() === "on") {
+      if(isWelcomer === true ) return m.reply(msg.Thison(command.toUpperCase()))
+      await addWelcome(from)
+      m.reply(msg.On(command.toUpperCase()))
+    } else if (value.toLowerCase() === "off") {
+      if(isWelcomer === false ) return m.reply(msg.Thisoff(command.toUpperCase()))
+      await delWelcome(from)
+      m.reply(msg.Off(command.toUpperCase()))
+    } else {
+      m.reply(msg.OnorOff)
+    }
+    break
     
     case 'detect':
     case 'detector':
@@ -2323,25 +2342,6 @@ Fg.send2ButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987
        m.reply(`${msg.listwb}\n\n▢ Welcome\n▢ Bye`)
      }
   break 
-
-  case 'welcomer':
-  case 'bienvenidar':
-    if(!isGroup) return m.reply(msg.group)
-    if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
-    //if(!isBotAdmins) return m.reply(msg.botadmin)
-    if(!value) return m.reply(msg.OnorOff)
-    if (value.toLowerCase() === "on") {
-      if(isWelcome === true ) return m.reply(msg.Thison(command.toUpperCase()))
-      await addWelcomer(from)
-      m.reply(msg.On(command.toUpperCase()))
-    } else if (value.toLowerCase() === "off") {
-      if(isWelcome === false ) return m.reply(msg.Thisoff(command.toUpperCase()))
-      await delWelcomer(from)
-      m.reply(msg.Off(command.toUpperCase()))
-    } else {
-      m.reply(msg.OnorOff)
-    }
-    break
 		
 case 'setwelcomer':
     if(!isGroup) return m.reply(msg.group)
