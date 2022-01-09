@@ -1596,25 +1596,6 @@ Fg.groupSettingChange(from, GroupSettingChange.messageSend, true)
       m.reply(msg.OnorOff)
     }
     break
-		
-   case 'welcomer':
-  case 'bienvenidar':
-    if(!isGroup) return m.reply(msg.group)
-    if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
-    //if(!isBotAdmins) return m.reply(msg.botadmin)
-    if(!value) return m.reply(msg.OnorOff)
-    if (value.toLowerCase() === "on") {
-      if(isWelcome === true ) return m.reply(msg.Thison(command.toUpperCase()))
-      await addWelcomer(from)
-      m.reply(msg.On(command.toUpperCase()))
-    } else if (value.toLowerCase() === "off") {
-      if(isWelcomer === false ) return m.reply(msg.Thisoff(command.toUpperCase()))
-      await delWelcomer(from)
-      m.reply(msg.Off(command.toUpperCase()))
-    } else {
-      m.reply(msg.OnorOff)
-    }
-    break
     
     case 'detect':
     case 'detector':
@@ -2315,84 +2296,6 @@ case 'delwelcome':
    if(!value) return m.reply(`${msg.listwb}\n\n▢ Welcome\n▢ Bye`)
    welc = getCustomWelcome(from)
    bye = getCustomBye(from)
-   tag = '@'+sender.split('@')[0]
-   try {
-	      ppimg = await Fg.getProfilePicture(who);
-	    } catch {
-	      ppimg = 'https://ibb.co/ysLjvyK';
-	    }
-	welm = await getBuffer(ppimg)
-   if(value.toLowerCase() === 'welcome') {
-     capt = welc.replace('@user', tag).replace('@name', pushname).replace('@bio', about).replace('@date', tanggal).replace('@desc', groupDesc).replace('@group', groupName) 
- // Fg.sendMessage(from, welm, image, {contextInfo: {  mentionedJid: [sender]}, thumbnail: fakethumb, quoted: mek, caption: capt})
-Fg.send2ButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987516808.', '⦙☰ MENU', '/menu', '⏍ INFO GP', '/infogp', false, {
-	      contextInfo: { 
-            mentionedJid: Fg.parseMention(capt)
-	      } 
-	    }); //--
-     } else if(value.toLowerCase() === 'bye') {
-       capt = bye.replace('@user', tag).replace('@name', pushname).replace('@bio', about).replace('@date', tanggal).replace('@group', groupName)       
-  //Fg.sendMessage(from, welm, image, {contextInfo: {  mentionedJid: [sender]}, thumbnail: fakethumb, quoted: mek, caption: capt})
-   Fg.sendButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987516808.', '🏴', 'unde', false, {
-	      contextInfo: { 
-            mentionedJid: Fg.parseMention(capt)
-	      } 
-	    });//---
-     } else {
-       m.reply(`${msg.listwb}\n\n▢ Welcome\n▢ Bye`)
-     }
-  break 
-		
-case 'setwelcomer':
-    if(!isGroup) return m.reply(msg.group)
-    if(!isAdmins && !isOwner) return m.reply(msg.admin)
-    fungsi = `
-@user = @${sender.split('@')[0]}
-@name = ${pushname}
-@bio = ${about}
-@date = ${tanggal}
-@group = ${groupName}
-@desc = ${groupDesc}
-`
-    if(!value) return m.reply(msg.setwel(fungsi))
-     await setCustomWelcomer(from, value)
-     m.reply(msg.setweldone(value, fungsi))
-     break
-
-  case 'setbyer':
-    if(!isGroup) return m.reply(msg.group)
-    if(!isAdmins && !isOwner) return m.reply(msg.admin)
-fungsi = `
-@user = @${sender.split('@')[0]}
-@name = ${pushname}
-@bio = ${about}
-@date = ${tanggal}
-@group = ${groupName}`
-    if(!value) return m.reply(msg.setbye(fungsi))
-    await setCustomByer(from, value)
-    m.reply(msg.setbyedone(value, fungsi))
-    break
-
-case 'delwelcomer':
-  case 'delbyer':
-    if(!isGroup) return m.reply(msg.group)
-    if(!isAdmins && !isOwner && !isBot) return m.reply(msg.owner)
-    if(command.includes('welcome')){
-      await delCustomWelcomer(from)
-      m.reply(msg.default('WELCOME'))
-    } else if(command.includes('bye')){
-      await delCustomByer(from)
-      m.reply(msg.default('BYE'))
-    }
-  break
-
-  case 'simulater':
- case 'simularr':
-   if(!isGroup) return m.reply(msg.group)
-   if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
-   if(!value) return m.reply(`${msg.listwb}\n\n▢ Welcome\n▢ Bye`)
-   welc = getCustomWelcomer(from)
-   bye = getCustomByer(from)
    tag = '@'+sender.split('@')[0]
    try {
 	      ppimg = await Fg.getProfilePicture(who);
