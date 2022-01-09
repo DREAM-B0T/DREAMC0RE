@@ -284,6 +284,7 @@ module.exports = Fg = async (Fg, mek) => {
      let isAfkReason = cekAfkReason(sender);
      let isOffline = cekOffline(from);
      let isWelcome = cekWelcome(from);
+     let isWelcomer = cekWelcomer(from),
      let isAntidelete = cekAntidelete(from);
      let isAntilink = cekAntilink(from);
      let isDetect = cekDetect(from);
@@ -2434,7 +2435,7 @@ case 'setwelcomer':
 @desc = ${groupDesc}
 `
     if(!value) return m.reply(msg.setwel(fungsi))
-     await setCustomWelcome(from, value)
+     await setCustomWelcomer(from, value)
      m.reply(msg.setweldone(value, fungsi))
      break
 
@@ -2448,7 +2449,7 @@ fungsi = `
 @date = ${tanggal}
 @group = ${groupName}`
     if(!value) return m.reply(msg.setbye(fungsi))
-    await setCustomBye(from, value)
+    await setCustomByer(from, value)
     m.reply(msg.setbyedone(value, fungsi))
     break
 
@@ -2457,10 +2458,10 @@ case 'delwelcomer':
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner && !isBot) return m.reply(msg.owner)
     if(command.includes('welcome')){
-      await delCustomWelcome(from)
+      await delCustomWelcomer(from)
       m.reply(msg.default('WELCOME'))
     } else if(command.includes('bye')){
-      await delCustomBye(from)
+      await delCustomByer(from)
       m.reply(msg.default('BYE'))
     }
   break
