@@ -284,7 +284,7 @@ module.exports = Fg = async (Fg, mek) => {
      let isAfkReason = cekAfkReason(sender);
      let isOffline = cekOffline(from);
      let isWelcome = cekWelcome(from);
-     let isWelcomer = cekWelcomer(from);
+     let isWelcomer = cekWelcome(from);
      let isAntidelete = cekAntidelete(from);
      let isAntilink = cekAntilink(from);
      let isDetect = cekDetect(from);
@@ -1604,12 +1604,12 @@ Fg.groupSettingChange(from, GroupSettingChange.messageSend, true)
     //if(!isBotAdmins) return m.reply(msg.botadmin)
     if(!value) return m.reply(msg.OnorOff)
     if (value.toLowerCase() === "on") {
-      if(isWelcomer === true ) return m.reply(msg.Thison(command.toUpperCase()))
-      await addWelcome(from)
+      if(isWelcome === true ) return m.reply(msg.Thison(command.toUpperCase()))
+      await addWelcomer(from)
       m.reply(msg.On(command.toUpperCase()))
     } else if (value.toLowerCase() === "off") {
       if(isWelcomer === false ) return m.reply(msg.Thisoff(command.toUpperCase()))
-      await delWelcome(from)
+      await delWelcomer(from)
       m.reply(msg.Off(command.toUpperCase()))
     } else {
       m.reply(msg.OnorOff)
