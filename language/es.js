@@ -51,18 +51,18 @@ exports.vno = `Si no estas de acuerdo`;
 exports.vrvt = `Ver Votaciones`;
 exports.rtvt = `RESULTADOS DE VOTACION`;
 exports.dlte = `Eliminar`;
-exports.setpmulti = `✅ Se cambio el prefijo a : *multiprefijo*`;
-exports.setpnopre = `✅ Se cambió de prefijo a : *nopref*`;
-exports.setponepre = `✅ Se cambio el prefijo a :`;
-exports.setpall = `Prefijos Disponibles`;
-exports.setpnp = `Sin prefijo`;
-exports.setpop = `Un prefijo`;
-exports.setpmt = `Multi prefijo`;
+exports.setpmulti = `|🌸| Se cambio el prefijo a : *multiprefijo*`;
+exports.setpnopre = `|🌸| Se cambió de prefijo a : *nopref*`;
+exports.setponepre = `|🌸| Se cambio el prefijo a :`;
+exports.setpall = `|🌸| Prefijos Disponibles`;
+exports.setpnp = `|🌸| Sin prefijo`;
+exports.setpop = `|🌸| Un prefijo`;
+exports.setpmt = `|🌸| Multi prefijo`;
 exports.updatef = `*Actualizado*\n\nInforme`;
-exports.simn = `quieres charlar un rato?\n\nResponde con`;
-exports.simmsg = `(Tu mensaje)\n\n📌 Ejemplo : `;
-exports.chatboton = `✅ Activaste *ChatBot* \n Lo que significa que podemos charlar ilimitadamente 😊`;
-exports.chatbotoff = `✅ *ChatBot* desactivado`; 
+exports.simn = `|🌸| Quieres charlar un rato?\n\nResponde con`;
+exports.simmsg = `|🌸| (Tu mensaje)\n\n Ejemplo : `;
+exports.chatboton = `|🌸| Activaste *ChatBot* \n Lo que significa que ahora puedo charlar contigo.`;
+exports.chatbotoff = `|🌸| *ChatBot* desactivado.`; 
 exports.pptt = `Seleccione`;
 exports.exple = `Ejemplo`;
 exports.emt = `Empate`;
@@ -72,7 +72,7 @@ exports.pptuser = `Tú`;
 exports.papel = `papel`;
 exports.tijera = `tijera`;
 exports.piedra = `piedra`;
-exports.foll = `Sígueme en Instagram \nhttps://www.instagram.com/fg98._`;
+exports.foll = `Informame de Errores: wa.me/593987516808`;
 exports.plays = `Ingresa el título de una canción`;
 exports.playm = `El archivo es demasiado grande, la reproducción de música se canceló, el tamaño máximo del archivo es de`;
 exports.listgp = `LISTA de Grupos`;
@@ -87,21 +87,20 @@ exports.viep = `Vistas`;
 exports.vcnrst = 'No detectado';
 exports.vclect = 'Lectura de voz';
 exports.listwb = 'Lista de eventos';
-exports.pregt = 'Ella me ama?';
-exports.donate = `≡ *DONACION*
-puedes donar si quieres ayudar a mantener el bot activo
+exports.pregt = 'Pasare el año?';
+exports.donate = `*〘💢〙PREMIUM:*
+Si quieres conseguir Premium deberas seguir unos cuantos pasos.
 
-▢ *PayPal*
-• *Link :* https://tinyurl.com/PayPal-fg
+Tu actividad en el grupo como tu participacion en eventos son fundamentales, puedes conseguir Premium mediante estas.
 
-_Al donar consigues_  *Premium* `;
-exports.cretb = 'Crea tu propio bot usando Termux';
+Usa .Premium si quieres ver como conseguir Premium y sus ventajas.`;
+exports.cretb = 'Crea tu propio BOT:';
 
 // -- Decir tiempo
-exports.night = 'Buenas noches'
-exports.evening = 'Buenas tardes'
-exports.day = 'Buen día'
-exports.morning = 'Buenos dias'
+exports.night = 'Buenas noches🌌'
+exports.evening = 'Buenas tardes🌄'
+exports.day = 'Buen día🏞️'
+exports.morning = 'Buenos dias🌅'
 
 
 // -- mensaje solo 
