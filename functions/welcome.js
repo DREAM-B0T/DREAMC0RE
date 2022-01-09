@@ -3,13 +3,18 @@ const Wel = JSON.parse(fs.readFileSync('./database/welcome.json'));
 
 const welAwal = `‿︵‿︵ʚ˚̣̣̣͙ɞ・💢・ ʚ˚̣̣̣͙ɞ‿︵‿︵ 
 
-Bienvenido @user a @group. . .
+Bienvenido @user a 
+@group. . .
 
 No olvides leer las reglas para no tener problemas.
 
 .reglas
 .reglasbt
 .reglasrol
+
+Para ver mis distintas funciones.
+
+.menu
 
 Esperamos que tu estancia en este grupo sea sana y divertida.
 
