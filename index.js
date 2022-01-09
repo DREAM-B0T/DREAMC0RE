@@ -2374,7 +2374,7 @@ case 'delwelcome':
    if(value.toLowerCase() === 'welcome') {
      capt = welc.replace('@user', tag).replace('@name', pushname).replace('@bio', about).replace('@date', tanggal).replace('@desc', groupDesc).replace('@group', groupName) 
  // Fg.sendMessage(from, welm, image, {contextInfo: {  mentionedJid: [sender]}, thumbnail: fakethumb, quoted: mek, caption: capt})
-Fg.send2ButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987516806.', {
+Fg.send2ButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987516806.', false, {
 	      contextInfo: { 
             mentionedJid: Fg.parseMention(capt)
 	      } 
