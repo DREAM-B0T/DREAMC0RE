@@ -4,6 +4,7 @@ const WAConnection = simple.WAConnection(_WAConnection);
 const Fg = new WAConnection();
 const {
   cekWelcome,
+  cekWelcomer,
   cekAntilink,
   cekBadword,
   cekAntidelete,
@@ -13,6 +14,10 @@ const {
   getCustomWelcome,
   getCustomBye
 } = require('./functions/welcome')
+const {
+  getCustomWelcomer,
+  getCustomByer
+} = require('./functions/welcomer')
 const fs = require("fs");
 const thumb = fs.readFileSync('./temp/fg.jpg')
 const { getBuffer } = require('./library/fetcher')
@@ -92,6 +97,53 @@ async function starts() {
   }
 });
 
+	//reclutamiento
+Fg.on('group-participants-update', async (anu) => {
+      isWelcomer = cekWelcomer(anu.jid);
+      if(isWelcomer === true) {
+      	
+      try {
+	      ppimg = await Fg.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`);
+	    } catch {
+	      ppimg = 'https://i.ibb.co/PZNv21q/Profile-FG98.jpg';
+	    } 
+	
+      mdata = await Fg.groupMetadata(anu.jid);
+      if (anu.action == 'add') {
+        num = anu.participants[0];
+          
+	    let username = Fg.getName(num)
+        let about = (await Fg.getStatus(num).catch(console.error) || {}).status || ''
+        let member = mdata.participants.length
+        let tag = '@'+num.split('@')[0]
+	    let buff = await getBuffer(ppimg);
+	    let descrip = mdata.desc
+	    let welc = await getCustomWelcomer(mdata.id)
+	    capt = welc.replace('@user', tag).replace('@name', username).replace('@bio', about).replace('@date', tanggal).replace('@desc', descrip).replace('@group', mdata.subject);
+	      Fg.send2ButtonLoc(mdata.id, buff, capt, 'Sígueme en Instagram\nhttps://www.instagram.com/fg98._', '⦙☰ MENU', '/menu', '⏍ INFO GP', '/infogp', false, {
+	      contextInfo: {  
+            mentionedJid: Fg.parseMention(capt)
+	      } 
+	    });
+        } else if (anu.action == 'remove') {
+        num = anu.participants[0];
+        let username = Fg.getName(num)
+        let about = (await Fg.getStatus(num).catch(console.error) || {}).status || ''
+        let member = mdata.participants.length
+        let tag = '@'+num.split('@')[0]
+        let buff = await getBuffer(ppimg);
+        let bye = await getCustomBye(mdata.id);
+        capt = bye.replace('@user', tag).replace('@name', username).replace('@bio', about).replace('@date', tanggal).replace('@group', mdata.subject);
+        Fg.sendButtonLoc(mdata.id, buff, capt, 'Sígueme en Instagram\nhttps://www.instagram.com/fg98._', '👋🏻', 'unde', false, {
+	      contextInfo: { 
+            mentionedJid: Fg.parseMention(capt)
+	      } 
+	    });
+	//--
+      }
+  }
+});
+	
 //-- Detector Promovido/Degradado
 Fg.on('group-participants-update', async (anu) => {
   metdata = await Fg.groupMetadata(anu.jid);
