@@ -2404,7 +2404,7 @@ Fg.send2ButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987
      }
   break 
 
-		  case 'welcomer':
+  case 'welcomer':
   case 'bienvenidar':
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
