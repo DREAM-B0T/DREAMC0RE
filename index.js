@@ -110,8 +110,6 @@ const {
   addWelcome,
   delWelcome,
   cekWelcome,
-  delWelcomer,
-  cekWelcomer,
   addAntilink,
   delAntilink,
   cekAntilink,
@@ -286,7 +284,7 @@ module.exports = Fg = async (Fg, mek) => {
      let isAfkReason = cekAfkReason(sender);
      let isOffline = cekOffline(from);
      let isWelcome = cekWelcome(from);
-     let isWelcomer = cekWelcomer(from);
+     let isWelcomer = cekWelcome(from);
      let isAntidelete = cekAntidelete(from);
      let isAntilink = cekAntilink(from);
      let isDetect = cekDetect(from);
@@ -2059,86 +2057,6 @@ case 'crear': m.reply(`	«───── « ⋅ʚ🌴ɞ⋅ » ─────»
 ❝〔🌹─ ᬊᬁ𝔇𝔢𝔰𝔱𝔦𝔫𝔶 ﹝彼女﹞〕❞ 
 	
 «───── « ⋅ʚ🌴ɞ⋅ » ─────»`)
-break
-		
-case 'tictactoe':
-case 'ttt':
-if (fs.readFileSync(`./lib/tictactoe/db/${from}.json`)) {
-const boardnow = setGame(`${from}`);
-const matrix = boardnow._matrix;
-const chatMove = `‿︵‿︵ʚ˚̣̣̣͙ɞ・🎮・ ʚ˚̣̣̣͙ɞ‿︵‿︵
-
-┃🎮┃Actualmente hay una sesión de juego:\n\n@${boardnow.X} VS @${boardnow.O}
-
-❌ : @${boardnow.X}
-⭕ : @${boardnow.O}
-
-Girar : 
-@${boardnow.turn == "X" ? boardnow.X : boardnow.O}
-
-
-${matrix[0][0]}  ${matrix[0][1]}  ${matrix[0][2]}
-${matrix[1][0]}  ${matrix[1][1]}  ${matrix[1][2]}
-${matrix[2][0]}  ${matrix[2][1]}  ${matrix[2][2]}
-
-
-‿︵‿︵ʚ˚̣̣̣͙ɞ・🎮・ ʚ˚̣̣̣͙ɞ‿︵‿︵
-`;
-Fg.sendMessage(from, chatMove, MessageType.text, {
-quoted: ftoko,
-contextInfo: {
-mentionedJid: [
-boardnow.X + "@s.whatsapp.net",
-boardnow.O + "@s.whatsapp.net",
-],
-},
-});
-return;
-}
-if (args.length === 1)
-	
-return m.reply(
-`Etiqueta a quien quieras que sea ser tu oponente.\n\nEjemplo : *.ttt <@tag>*`
-);
-	const boardnow = setGame(`${from}`);
-	console.log(`NUEVA SECCION DE TTT ${boardnow.session}`);
-	boardnow.status = false;
-	boardnow.X = sender.replace("@s.whatsapp.net", "");
-	boardnow.O = args[1].replace("@", "");
-	fs.writeFileSync(
-		 `./lib/tictactoe/db/${from}.json`,
-		 JSON.stringify(boardnow, null, 2)
-);
-const strChat = `‿︵‿︵ʚ˚̣̣̣͙ɞ・🎮・ ʚ˚̣̣̣͙ɞ‿︵‿︵
-
-[🎮]⸺TicTaeToe⸺[🎳]
-
-@${sender.replace(
-		 "@s.whatsapp.net",
-		 ""
-	
-)} te ha desafiado a ser su oponente en TTT.
-
-_[ ${args[1]} ] Escribe "S" o "N" para aceptar o rechazar el juego._ 
-
-‿︵‿︵ʚ˚̣̣̣͙ɞ・🎮・ ʚ˚̣̣̣͙ɞ‿︵‿︵
-`;
-Fg.sendMessage(from, strChat, MessageType.text, {
-quoted: ftoko,
-contextInfo: {
-mentionedJid: [sender, args[1].replace("@", "") + "@s.whatsapp.net"],
-},
-});
-break
-		
-case 'delttt':
-	// if(!isOwner && !revz.key.fromMe) return vean.sendMessage(id, yan, MessageType.text);
-if (fs.existsSync("./lib/tictactoe/db/" + from + ".json")) {
-fs.unlinkSync("./lib/tictactoe/db/" + from + ".json");
-m.reply(`┃🎳┃ Sesión eliminada con éxito.`);
-} else {
-m.reply(`No hay sesión en curso.`);
-}
 break
   
 case 'voting':
