@@ -97,52 +97,6 @@ async function starts() {
   }
 });
 
-	//reclutamiento
-Fg.on('group-participants-update', async (anu) => {
-      isWelcomer = cekWelcomer(anu.jid);
-      if(isWelcomer === true) {
-      	
-      try {
-	      ppimg = await Fg.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`);
-	    } catch {
-	      ppimg = 'https://ibb.co/ysLjvyK';
-	    } 
-	
-      mdata = await Fg.groupMetadata(anu.jid);
-      if (anu.action == 'add') {
-        num = anu.participants[0];
-          
-	    let username = Fg.getName(num)
-        let about = (await Fg.getStatus(num).catch(console.error) || {}).status || ''
-        let member = mdata.participants.length
-        let tag = '@'+num.split('@')[0]
-	    let buff = await getBuffer(ppimg);
-	    let descrip = mdata.desc
-	    let welc = await getCustomWelcomer(mdata.id)
-	    capt = welc.replace('@user', tag).replace('@name', username).replace('@bio', about).replace('@date', tanggal).replace('@desc', descrip).replace('@group', mdata.subject);
-	      Fg.send2ButtonLoc(mdata.id, buff, capt, 'Informame de cualquier error.\nwa.me/593987516808.', '⦙☰ MENU', '/menu', '⏍ INFO GP', '/infogp', false, {
-	      contextInfo: {  
-            mentionedJid: Fg.parseMention(capt)
-	      } 
-	    });
-        } else if (anu.action == 'remove') {
-        num = anu.participants[0];
-        let username = Fg.getName(num)
-        let about = (await Fg.getStatus(num).catch(console.error) || {}).status || ''
-        let member = mdata.participants.length
-        let tag = '@'+num.split('@')[0]
-        let buff = await getBuffer(ppimg);
-        let bye = await getCustomByer(mdata.id);
-        capt = bye.replace('@user', tag).replace('@name', username).replace('@bio', about).replace('@date', tanggal).replace('@group', mdata.subject);
-        Fg.sendButtonLoc(mdata.id, buff, capt, 'Informame de cualquier error.\nwa.me/593987516808.', '🏴', 'unde', false, {
-	      contextInfo: { 
-            mentionedJid: Fg.parseMention(capt)
-	      } 
-	    });
-	//--
-      }
-  }
-});
 	
 //-- Detector Promovido/Degradado
 Fg.on('group-participants-update', async (anu) => {
