@@ -2368,7 +2368,7 @@ case 'delwelcome':
    try {
 	      ppimg = await Fg.getProfilePicture(who);
 	    } catch {
-	      ppimg = 'https://i.ibb.co/PZNv21q/Profile-FG98.jpg';
+	      ppimg = 'https://ibb.co/ysLjvyK';
 	    }
 	welm = await getBuffer(ppimg)
    if(value.toLowerCase() === 'welcome') {
