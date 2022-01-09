@@ -16,7 +16,8 @@ const addGroup = (id) => {
       const obj = { 
           from: id, 
           offline: false, 
-          welcome: false, 
+          welcome: false,
+          welcomer: false,
           antilink: false,
           badword: false,
           antidelete: false,
@@ -125,6 +126,56 @@ const delWelcome = (id) => {
   });
   if (position !== false) {
     Group[position].welcome = false;
+    fs.writeFileSync('./database/group.json', JSON.stringify(Group, null, "\t"));
+  }
+};
+
+/**
+ * 
+ * @param { string } id 
+ */
+const cekWelcomer = (id) => {
+  let position = false;
+  Object.keys(Group).forEach((i) => {
+    if (Group[i].from === id) {
+      position = i;
+    }
+  });
+  if (position !== false) {
+    return Group[position].welcomer;
+    }
+};
+
+/**
+ * 
+ * @param { string } id
+*/
+const addWelcomer = (id) => {
+  let position = false;
+  Object.keys(Group).forEach((i) => {
+    if (Group[i].from === id) {
+      position = i;
+    }
+  });
+  if (position !== false) {
+    Group[position].welcomer = true;
+    fs.writeFileSync('./database/group.json', JSON.stringify(Group, null, "\t"));
+  }
+};
+
+/**
+ * 
+ * @param { string } id
+*/
+const delWelcomer = (id) => {
+  let position = false;
+  Object.keys(Group).forEach((i) => {
+    if (Group[i].from === id) {
+      position = i;
+    }
+  });
+  if (position !== false) {
+    Group[position].welcomer = false;
     fs.writeFileSync('./database/group.json', JSON.stringify(Group, null, "\t"));
   }
 };
