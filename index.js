@@ -2411,7 +2411,7 @@ Fg.send2ButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987
     }
     break
 		
-case 'setwelcome':
+case 'setwelcomer':
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner) return m.reply(msg.admin)
     fungsi = `
@@ -2427,7 +2427,7 @@ case 'setwelcome':
      m.reply(msg.setweldone(value, fungsi))
      break
 
-  case 'setbye':
+  case 'setbyer':
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner) return m.reply(msg.admin)
 fungsi = `
@@ -2441,8 +2441,8 @@ fungsi = `
     m.reply(msg.setbyedone(value, fungsi))
     break
 
-case 'delwelcome':
-  case 'delbye':
+case 'delwelcomer':
+  case 'delbyer':
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner && !isBot) return m.reply(msg.owner)
     if(command.includes('welcome')){
@@ -2454,8 +2454,8 @@ case 'delwelcome':
     }
   break
 
-  case 'simulate':
- case 'simular':
+  case 'simulater':
+ case 'simularr':
    if(!isGroup) return m.reply(msg.group)
    if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
    if(!value) return m.reply(`${msg.listwb}\n\n▢ Welcome\n▢ Bye`)
