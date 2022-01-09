@@ -1,5 +1,5 @@
 const fs = require("fs");
-const Welr = JSON.parse(fs.readFileSync('./database/welcome.json'));
+const Welr = JSON.parse(fs.readFileSync('./database/welcomer.json'));
 
 const welrAwal = `Hola @user 
 Bienvenido(a)  al grupo *@group*
@@ -28,7 +28,7 @@ const addCustomWelcomer = (chatId) => {
       textbye: byeAwal
     };
     Wel.push(obj);
-    fs.writeFileSync('./database/welcome.json', JSON.stringify(Wel, null, "\t"));
+    fs.writeFileSync('./database/welcomer.json', JSON.stringify(Wel, null, "\t"));
     return false;
   }
 };
