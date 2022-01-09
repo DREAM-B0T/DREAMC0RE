@@ -142,7 +142,7 @@ const cekWelcomer = (id) => {
     }
   });
   if (position !== false) {
-    return Group[position].welcomer;
+    return Group[position].welcome;
     }
 };
 
@@ -158,7 +158,7 @@ const addWelcomer = (id) => {
     }
   });
   if (position !== false) {
-    Group[position].welcomer = true;
+    Group[position].welcome = true;
     fs.writeFileSync('./database/group.json', JSON.stringify(Group, null, "\t"));
   }
 };
@@ -175,7 +175,7 @@ const delWelcomer = (id) => {
     }
   });
   if (position !== false) {
-    Group[position].welcomer = false;
+    Group[position].welcome = false;
     fs.writeFileSync('./database/group.json', JSON.stringify(Group, null, "\t"));
   }
 };
