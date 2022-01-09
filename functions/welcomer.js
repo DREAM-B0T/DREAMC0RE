@@ -139,12 +139,12 @@ const delCustomByer = (chatId) => {
 };
 
 module.exports = {
-  Wel,
-  addCustomWelcome,
-  getCustomWelcome,
-  setCustomWelcome,
-  delCustomWelcome,
-  getCustomBye,
-  setCustomBye,
-  delCustomBye
+  Welr,
+  addCustomWelcomer,
+  getCustomWelcomer,
+  setCustomWelcomer,
+  delCustomWelcomer,
+  getCustomByer,
+  setCustomByer,
+  delCustomByer
 };
