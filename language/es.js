@@ -4,40 +4,40 @@ exports.vnCmd = (v) => {
 };
 
 // -- enviar mensaje 
-exports.wait = `*⌛ _Cargando..._ ▬▬▬▭*`;
-exports.bye = `Adios...`;
-exports.done = `✅ Hecho`;
+exports.wait = `[⌛] 𝙿𝚛𝚘𝚌𝚎𝚜𝚊𝚗𝚍𝚘 ▬▬▬▭`;
+exports.bye = `[💤]⸺ 𝘐𝘳𝘦 𝘢 𝘥𝘰𝘳𝘮𝘪𝘳. . .`;
+exports.done = `[✔️ 𝙃𝙚𝙘𝙝𝙤 ✔️]`;
 exports.next = (value) => {
   return `Haga click en siguiente para *${value}* `;
 };
-exports.packon = 'Nombre del paquete ya registrado';
-exports.packoff = 'El nombre del paquete de medios no está registrado en la base de datos.';
-exports.liston = '✅ Lista de medios almacenados en la base de datos';
-exports.getlist = '✳️ Use el comando getimg/getvid/getav/getstik para enviar un paquete de un medio\n*📌Ejemplo* : /getimg auron';
+exports.packon = '[🌸] Nombre del paquete ya registrado';
+exports.packoff = '[❌] Nombre del paquete en medios no esta regristrado';
+exports.liston = '[✔️] Lista de medios almacenados en la base de datos';
+exports.getlist = '[🌸] Use el comando getimg/getvid/getav/getstik para enviar un paquete de un medio\n\nEjemplo : /getimg auron';
 exports.nolink = (value) => {
-  return '✳️ Repita agregando un enlace ' + value;
+  return '[🌸] Repita agregando un enlace ' + value;
 };
 //--new
 exports.lvl = `Nivel`;
 exports.nme = `Nombre`;
 exports.hi = `Hola`;
 exports.gp = `Grupo`;
-exports.restart = `✅ Reiniciando Bot`;
+exports.restart = `[🌹]⸺ 𝘌𝘯𝘵𝘦𝘯𝘥𝘪𝘥𝘰.`;
 exports.pinsp = `Velocidad`;
 exports.pinse = `Segundos`;
 exports.num = `Numero`;
 exports.click = `Click aquí`;
 exports.next2 = `Siguiente`;
-exports.stima = `✳️ Envia una imagen con el comando\n o etiqueta una imagen que se haya enviado, *Videos 1-9 segundos* `;
-exports.resulf = `Resultado`; 
+exports.stima = `[🌸] Envia una imagen con el comando\n o etiqueta una imagen que se haya enviado, *Videos 1-9 segundos* `;
+exports.resulf = `[🌸] Resultado`; 
 exports.bugr = `Gracias\nSu reporte ha sido almacenada en la base de datos. `;
 exports.linkgp = `Link del Grupo `;
 exports.linkrevo = `Enlace del grupo anulado`;
 exports.newlink = `Nuevo enlace`;
-exports.gpbt = `🛡️ Configuración de grupo\nAbrir y cerrar el grupo`;
+exports.gpbt = `[🌹]⸺ Configuración del grupo\nAbrir y cerrar el grupo`;
 exports.gpbtt = `A continuación elija uno`;
-exports.gpopenb = `ABRIR`;
-exports.gpcloseb = `CERRAR`;
+exports.gpopenb = `🌸> Abrir`;
+exports.gpcloseb = `💢> Cerrar`;
 exports.idiom = `Idioma`;
 exports.wrn = `Advertencia`;
 exports.pfile = `PERFIL`;
@@ -105,104 +105,99 @@ exports.morning = 'Buenos dias'
 
 
 // -- mensaje solo 
-exports.admin = '✳️ Este comando es solo para *Admins* del grupo';
-exports.group = '✳️ ¡Este comando solo se puede usar en grupos!';
-exports.premium = '✳️ Este comando es solo para miembros *Premium*';
-exports.premdl = '✳️ Lo sentimos, no es un usuario premium, descárguelo usted mismo usando el enlace\n*LINK* : ';
-exports.botadmin = '✳️ ¡Para usar este comando debo ser *Administrador!*';
-exports.owner = '✳️ Esta función es solo para *Para el dueño del Bot*';
-exports.isprem = '✳️ El usuario es el usuario premium anterior.';
-exports.noprem = '✳️ El usuario aún no es un usuario premium.';
-exports.ban = '✳️ El estado de usuario ha sido prohibido antes';
-exports.noban = '✳️ El usuario no tiene estado prohibido';
-exports.isadmin = '✳️ El bot no puede iniciar sesión como administrador';
-exports.oversize = '⚠️ El tamaño del archivo excede el tamaño especificado, descárguelo usted mismo a través del siguiente enlace\n*🔗 Link* : ';
+exports.admin = '|⚠️| Este comando solo lo pueden usar los *Admins* del grupo.';
+exports.group = '|⛔️| ¡Este comando solo se puede usar en grupos!.';
+exports.premium = '|⛔️| Este comando es solo para miembros *Premium*.';
+exports.premdl = '|⛔️| Lo siento, no eres un usuario premium, descárgualoo usando el enlace.\n**🔗 Link* : ';
+exports.botadmin = '|⚠️| ¡Para usar este comando debo ser *Administradora!.*';
+exports.owner = '|🌸| Esta función es solo la puede usar *Mi Maestro.*';
+exports.isprem = '|🌸| El usuario es el usuario premium anterior.';
+exports.noprem = '|🌸| El usuario aún no es un usuario premium.';
+exports.ban = '|⛔️| El estado de usuario ha sido prohibido antes.';
+exports.noban = '|🌸| El usuario no tiene estado prohibido.';
+exports.isadmin = '|⛔️| El bot no puede iniciar sesión como administrador.';
+exports.oversize = '⚠️ El tamaño del archivo excede el tamaño especificado, descárguelo usted mismo a través del siguiente enlace.\n*🔗 Link* : ';
 
 // -- texto
-exports.notag = '✳️ Etiqueta a un miembro del grupo';
-exports.nonum = '✳️ Repita agregando el número de destino';
-exports.notext = '✳️ Repita agregando texto';
-exports.reply = '✳️Responde a un mensaje...';
-exports.replyStic = '✳️Responde a un sticker...';
-exports.replyVid = '✳️ Responde a un vide...';
-exports.replyVn = '✳️ Responde a un audio...';
-exports.replyImg = '✳️ Responde a una imagen...';
-exports.noreply = '✳️ El mensaje al que respondió no contenía una respuesta';
+exports.notag = '|🌸| Etiqueta a un miembro del grupo';
+exports.nonum = '|🌸| Repita agregando el número de destino';
+exports.notext = '|🌸| Repita agregando texto';
+exports.reply = '|🌸| Responde a un mensaje...';
+exports.replyStic = '|🌸| Responde a un sticker...';
+exports.replyVid = '|🌸| Responde a un vide...';
+exports.replyVn = '|🌸| Responde a un audio...';
+exports.replyImg = '|🌸| Responde a una imagen...';
+exports.noreply = '|🌸| El mensaje al que respondió no contenía una respuesta.';
 exports.nolink = (value) => {
-  return `✳️ Repita agregando un enlace de *${value}*`;
+  return `|🌸| Repita agregando un enlace de *${value}*.`;
 };
-exports.addwarn = `⚠️ Advertencia\nusted obtiene 1 advertencia`;
-exports.delwarn = `⚠️ Advertencia\n Se redujo 1 advertencia`;
+exports.addwarn = `|⚠️| *ADVERTENCIA*\nObtienes 1 advertencia`;
+exports.delwarn = `|🌸| *SIGUE ASI!*\nSe redujo tu advertencia`;
 exports.cekwarn = (warn) => {
-  return `≡ ADVERTENCIAS \n\n▢ Total  : *${warn}*`;
+  return `|⚠️| ADVERTENCIAS \n\n⮞ Total  : *${warn}*`;
 };
-exports.nowarn = `✳️ El usuario no tiene ninguna advertencia`;
+exports.nowarn = `|🌸| El usuario no tiene ninguna advertencia, bien hecho.`;
 
-exports.Pbahasa = `✳️ Seleccione el idioma que desea utilizar
+exports.Pbahasa = `|🌸| Seleccione el idioma que desea utilizar.
+
+*Idiomas disponibles:*
+
+- es (Spanish) 
+- en (English)
+
+Ejemplo : */language en*`;
+exports.nobahasa = `|💢| Idioma no disponible.
 
 *Idiomas disponibles*
 - es (Spanish) 
-- id (Indonesia) 
-- en (English)
-- pt (Portugués)
+- en (English)`;
 
-📌 Ejemplo : */language en*`;
-exports.nobahasa = `Idioma no disponible
-
-*Idiomas disponibles*
-- es (Spanish) 
-- id (Indonesia) 
-- en (English)
-- pt (Portugués)
-
-📌 Ejemplo : */language en*`;
-
-exports.online = '✅ Bot activo  en este grupo'
-exports.offline = '✅ Se desactivo el Bot en este grupo'
+exports.online = '┃🌸┃ Orden recibida, me he activado en este grupo.'
+exports.offline = '┃🌸┃ Orden recibida, me he desactivado en este grupo.'
 
 // -- grupo
-exports.onwa = '✳️ El usuario ya está en el grupo';
+exports.onwa = '┃🌸┃ El Usser ya se encuentra en el grupo.';
 exports.sendlink = '✅ Envía una invitación a';
-exports.open = '✅ Grupo abierto ahora *todos los participantes* pueden escribir';
-exports.close = '✅ Grupo cerrado ahora *solo los admin* pueden escribir';
+exports.open = '[🌸] Grupo abierto\n\nAhora *todos los Ussers* pueden escribir.';
+exports.close = '[🌸] Grupo cerrado\n\nAhora *solo los Administradores* pueden escribir.';
 exports.name = (value) => {
-  return `✅ Se cambió el nombre a \n\n*${value}*`;
+  return `┃🌸┃ Se ha cambiado el nombre del grupo a: \n\n${value}.`;
 };
 exports.desk = (value) => {
-  return `✅ Cambió la descripción del grupo a \n\n${value}`;
+  return `┃🌸┃ Se ha cambiado la desc a: \n\n${value}.`;
 };
 exports.promote = (value) => {
-  return `✅  *${value}* Promovido como administrador`;
+  return `┃🌸┃  *${value}* Fue promovido como Administrador.`;
 };
 exports.demote = (value) => {
-  return '✅ Admin degradado' + value;
+  return '┃🌸┃ Orden recibida.' + value;
 };
 
 exports.kick = (value) => {
-  return '✅ Orden recibida, emitida '+value;
+  return '┃🌸┃ Orden recibida.'+value;
 };
 exports.On = (value) => {
- return `✅ Se activo *${value}* en este grupo`;
+ return `┃🌸┃ Orden recibida, *${value}* en este grupo.`;
 };
 exports.Off = (value) => {
-  return `✅ *${value}* desactivado para este grupo`;
+  return `┃🌸┃ Orden recibida, *${value}* desactivado para este grupo.`;
 };
 exports.Thison = (value) => {
-  return `✳️ *${value}* Se activó antes`;
+  return `┃🌸┃ *${value}* ya esta activo.`;
 };
 exports.Thisoff = (value) => {
-return `✳️ *${value}* se desactivo antes`;
+return `┃🌸┃ *${value}* ya se ha desactivado.`;
 };
-exports.OnorOff = '✳️ Repita agregando on/off';
-exports.antilink = '⚠️ Se te detecta enviando un enlace de un grupo de whatsapp';
+exports.OnorOff = '┃🌸┃ Repita agregando on/off.';
+exports.antilink = '[⚠️] Se te ha detectado un enlace de un grupo de WhatsApp.';
 
 exports.setwel = (value) => { 
-  return `✳️ Ingrese el mensaje de *bienvenida*
+  return `┃🌸┃ Ingrese el mensaje de *Bienvenida:*
 
-*📌 Ejemplo:*
-/setwelcome Bienvenido @user  a @group
+*Ejemplo:*
+/setwelcome Bienvenido @user a @group.
 
-Tag : @user 
+Tag Usser : @user 
 Nombre : @name
 Bio : @bio
 Fecha : @date
@@ -213,67 +208,71 @@ Descripción : @desc
 };
 
 exports.setbye = (value) => {
-  return `✳️ Ingrese el mensaje de *Despedida*
+  return `┃🌸┃ Ingrese el mensaje de *Despedida:*
   
-*📌 Ejemplo:*
+* Ejemplo:*
 /setbye Adios  @user
 
 *Ejemplos para cada función*\n` + value;
 };
 
 exports.setweldone = (value, fungsi) => {
-  return `✅ Se estableció el mensaje de  *Bienvenida*`;
+  return `┃🌸┃ Se estableció como  *Bienvenida*.`;
 };
 
 exports.setbyedone = (value, fungsi) => {
-  return `✅ Se estableció el mensaje de  *Despedida*`;
+  return `┃🌸┃ Se estableció como  *Despedida*.`;
 };
 //--
 exports.default = (value) => {
-  return value + ' Vuelve a la configuración inicial';
+  return value + '┃🌸┃ Se ha devuelto a la configuracion inicial.';
 };
 
 exports.main = (value) => {
-  return '✳️ Todavía hay un ' + value + ' en curso';
+  return '┃🌸┃ Todavía hay un ' + value + ' en curso.';
 };
 exports.nomain = (value) => {
-  return `✳️ No hay *${value}* en curso`;
+  return `┃🌸┃ No hay *${value}* en curso.`;
 };
 exports.inmain = (value) => {
-  return `Ya has Votado *${value}*`
+  return `┃🍃┃ Ya has Votado *${value}*.`
 };
 exports.hapus = (value) =>{
-  return `✅ Se eliminó *${value}* de este grupo`;
+  return `┃🌸┃ Se eliminó *${value}* en este grupo.`;
 };
 
 // juegos
-exports.onGame = '⚠️ Todavía hay preguntas sin respuesta en este chat.';
+exports.onGame = '┃⚠️┃ Todavía hay preguntas sin respuesta en este chat.';
 exports.soal = (text1, text2, text3) => {
   return `${text1}
+╭══• ೋ•✧๑♡๑✧•ೋ •══╮
 
-⏳ *Tiempo*
+*Tiempo:*
 ${text2}
 
-*RECOMPENSA*
-${text3} Coins
+*Recompensa:*
+${text3} Coins.
 
-Responde este mensaje para responder
-La pista de respuesta aparece en los últimos 10 segundos.`;
+Responde este mensaje para responder,
+La pista de respuesta aparece en los últimos 10 segundos.
+
+🌹🙢𝔇𝔢𝔰𝔱𝔦𝔫𝔶 𝔞𝔫𝔡 𝔇𝔯𝔢𝔞𝔪𝔦𝔫𝔤🙠🍃
+╰══• ೋ•✧๑♡๑✧•ೋ •══╯`;
 };
 
-exports.timeout = '⏳ Se acabó el tiempo, la respuesta es ';
-exports.salah = '❎ *Incorrecto* !\nIntente otra vez';
-exports.hampir = '*✳️ Casi lo logras* \nSigue intentando!';
+exports.timeout = '|⌛| Se acabó el tiempo, la respuesta es ';
+exports.salah = '|❌| *¡Incorrecto!*\nIntenta otra vez';
+exports.hampir = '|🌸| Casi lo logras* \nSigue intentando!';
 exports.benar = (value, value2) => {
-  return `✅ *Respuesta correcta!*\n\n‣ Ganaste : *${value2}* Coins`;
+  return `|✅| Respuesta correcta!\n\n‣ Ganaste : *${value2}* Coins.`;
 };
 
 // afk
-exports.with = '▢ Razón : ';
+exports.with = '‣ Razón : ';
 exports.onAfk = (value) => {
-  return `😴 *AFK* \n\nAhora estas afk hasta que envies un mensaje\n${value}`
+  return `┃🌸┃*AFK* \nEstas afk hasta que envies un mensaje\n${value}`
 };
-exports.offAfk = 'Regresaste de AFK'
+exports.offAfk = '|🌸| Regresaste del *AFK*'
 exports.inAfk = (value, time) => {
-  return `El usuario que mencionas está AFK  \n${value}\n▢ Desde : ${time} `
+  return `┃🌸┃ El usuario al que mencionas está AFK.  \n${value}\n‣ Desde : ${time} `
 }
