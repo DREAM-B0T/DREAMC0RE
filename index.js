@@ -110,6 +110,8 @@ const {
   addWelcome,
   delWelcome,
   cekWelcome,
+  delWelcomer,
+  cekWelcomer,
   addAntilink,
   delAntilink,
   cekAntilink,
