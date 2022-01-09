@@ -2294,7 +2294,7 @@ case 'riddle':
    } 
     break
     
-    case 'update':
+    case 'update1':
     case 'actualizar':
 if (!isOwner && !isBot) return m.reply(msg.owner)
 exec(`git pull`, (err, stdout) => {
@@ -2374,7 +2374,7 @@ case 'delwelcome':
    if(value.toLowerCase() === 'welcome') {
      capt = welc.replace('@user', tag).replace('@name', pushname).replace('@bio', about).replace('@date', tanggal).replace('@desc', groupDesc).replace('@group', groupName) 
  // Fg.sendMessage(from, welm, image, {contextInfo: {  mentionedJid: [sender]}, thumbnail: fakethumb, quoted: mek, caption: capt})
-Fg.send2ButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987516806.', '⦙☰ MENU', '/menu', '⏍ INFO GP', '/infogp', false, {
+Fg.send2ButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987516808.', '⦙☰ MENU', '/menu', '⏍ INFO GP', '/infogp', false, {
 	      contextInfo: { 
             mentionedJid: Fg.parseMention(capt)
 	      } 
@@ -2382,7 +2382,7 @@ Fg.send2ButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987
      } else if(value.toLowerCase() === 'bye') {
        capt = bye.replace('@user', tag).replace('@name', pushname).replace('@bio', about).replace('@date', tanggal).replace('@group', groupName)       
   //Fg.sendMessage(from, welm, image, {contextInfo: {  mentionedJid: [sender]}, thumbnail: fakethumb, quoted: mek, caption: capt})
-   Fg.sendButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987516806.', '👋🏻', 'unde', false, {
+   Fg.sendButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987516808.', '🏴', 'unde', false, {
 	      contextInfo: { 
             mentionedJid: Fg.parseMention(capt)
 	      } 
@@ -2392,6 +2392,25 @@ Fg.send2ButtonLoc(from, welm, capt, 'Informame de cualquier error.\nwa.me/593987
      }
   break 
 
+		  case 'welcomer':
+  case 'bienvenidar':
+    if(!isGroup) return m.reply(msg.group)
+    if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
+    //if(!isBotAdmins) return m.reply(msg.botadmin)
+    if(!value) return m.reply(msg.OnorOff)
+    if (value.toLowerCase() === "on") {
+      if(isWelcome === true ) return m.reply(msg.Thison(command.toUpperCase()))
+      await addWelcome(from)
+      m.reply(msg.On(command.toUpperCase()))
+    } else if (value.toLowerCase() === "off") {
+      if(isWelcome === false ) return m.reply(msg.Thisoff(command.toUpperCase()))
+      await delWelcome(from)
+      m.reply(msg.Off(command.toUpperCase()))
+    } else {
+      m.reply(msg.OnorOff)
+    }
+    break
+		
   
   case 'attp':
 	          if(!value) return m.reply(msg.notext)
