@@ -53,4 +53,4 @@ function start(file) {
 
 }
 
-start('main.js');
+start('main.js')
