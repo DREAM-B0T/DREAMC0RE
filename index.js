@@ -470,8 +470,8 @@ if (isBanned) return; // los usuarios con estado baneado no podrán usar el coma
 
 switch (command) { 
  
- case 'menu': 
- case 'help':
+ case 'measdnu': 
+ case 'helddp':
     capt = `────  *DyLux  ┃ ᴮᴼᵀ*  ────
     
 ${msg.hi} *${pushname}* ${ucapanWaktu}
